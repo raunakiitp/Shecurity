@@ -1,0 +1,101 @@
+/* Shecurity global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14213d;
+  --surface: #1f2e4d;
+  --paper: #f7f4ee;
+  --sand: #ede7db;
+  --teal: #1f7a6d;
+  --teal-hover: #186559;
+  --teal-light: #3fbfae;
+  --coral: #d1495b;
+  --coral-hover: #b83a4b;
+  --coral-light: #f2a0ab;
+  --amber: #e9a23b;
+  --text-dark: #1b1f2a;
+  --muted: #5b6475;
+  --border: #d8d2c4;
+  /* dark-surface accessibility tokens (mirror of tailwind.config.ts) */
+  --mist: #b4bccb;
+  --steel: #9aa5bc;
+  --line-dark: #6b7ba6;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-dark);
+  background: var(--paper);
+}
+
+/* Dark app surfaces: secondary text + placeholders via tokens */
+.dark {
+  color-scheme: dark;
+}
+.dark ::placeholder {
+  color: var(--steel);
+  opacity: 1;
+}
+
+/* Focus visibility everywhere */
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.on-dark :focus-visible,
+.dark :focus-visible {
+  outline-color: #6fd0c0;
+}
+
+::selection {
+  background: rgba(31, 122, 109, 0.25);
+}
+
+/* Scrollbar (subtle) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(91, 100, 117, 0.4) transparent;
+}
+
+/* Reduced motion: kill decorative animation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Leaflet container needs explicit height */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+/* Keyframes used outside Tailwind config */
+@keyframes shecurity-pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
