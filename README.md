@@ -7,13 +7,14 @@
 ### It listens before you have to call.
 
 ![Built for HERHACK 2026](https://img.shields.io/badge/Built%20for-HERHACK%202026-1F7A6D)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Shecurity-1F7A6D?style=for-the-badge)](https://shecurityapp.netlify.app/)
 ![React](https://img.shields.io/badge/React-18-14213D)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-14213D)
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-YAMNet-E9A23B)
 ![Netlify](https://img.shields.io/badge/Deploy-Netlify-1F7A6D)
 ![License MIT](https://img.shields.io/badge/License-MIT-5B6475)
 
-**[Live Demo](TODO_ADD_URL) · [Demo Video](TODO_ADD_URL) · [Devpost](TODO_ADD_URL)**
+**[Live Demo](https://shecurityapp.netlify.app/)**
 
 </div>
 
@@ -81,7 +82,7 @@ The demo account is created on your device — nothing is sent anywhere.
 
 **Demo credentials** (read from the demo account in `src/app/auth.ts` / `src/pages/Demo.tsx`): unlock code `1234=` · Real PIN `1234` · Duress PIN `9999`
 
-1. Open the **live link** → click **Continue as Demo User** (or *Live Demo* → *Open calculator*).
+1. Open **[shecurityapp.netlify.app](https://shecurityapp.netlify.app/)** → click **Continue as Demo User** (or *Live Demo* → *Open calculator*).
 2. On the calculator, type **`1234`** then **`=`** → the hidden dashboard opens.
 3. Flip **Monitoring** ON — "Preparing on-device AI…" appears once, then "YAMNet ready".
 4. In **Test with sound**, press **Play scream sample** with your speakers on (no need to make noise yourself).
@@ -160,6 +161,8 @@ npm run typecheck      # tsc --noEmit
 
 > 🔐 HTTPS is required for microphone and geolocation — Netlify provides it automatically (`localhost` is exempt for local development).
 
+The live deployment is at **[shecurityapp.netlify.app](https://shecurityapp.netlify.app/)**.
+
 ## 📁 Project Structure
 
 ```
@@ -198,12 +201,13 @@ shecurity/
 
 ## 👥 Team
 
-| Name | Role | GitHub / LinkedIn |
+Built by a 3-member team for HERHACK 2026.
+
+| Name | Role | GitHub |
 |---|---|---|
-| `TODO_ADD_NAME` | Team lead · Full-stack | `TODO_ADD_GITHUB` |
-| `TODO_ADD_NAME` | ML / audio pipeline | `TODO_ADD_GITHUB` |
-| `TODO_ADD_NAME` | Frontend & design | `TODO_ADD_GITHUB` |
-| `TODO_ADD_NAME` | Research & pitch | `TODO_ADD_GITHUB` |
+| Mahima Kumari | Frontend Developer: UI/UX, responsive design, marketing site | [@mahik2007](https://github.com/mahik2007) |
+| Gyanvi | Research & Product Strategy: problem research, user insights, safety domain | [@gyanvisingh12745-gif](https://github.com/gyanvisingh12745-gif) |
+| Raunak Yadav | Backend & Core Engine: audio pipeline, storage, cryptography, alert logic | [@raunakiitp](https://github.com/raunakiitp) |
 
 ## 🙏 Credits & License
 
